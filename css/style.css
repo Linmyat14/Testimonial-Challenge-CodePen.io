@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.hero1{
+    background-image: url(../images/hero1.jpg); /*photo by okeykat for Unsplash */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero1 h1 {
+    font-size: 50px;
+    color: hotpink;
+    margin-bottom: 20px;
+}
+.hero1 h1{
+        -webkit-text-stroke: 1px white; 
+        /* text-stroke: 1px hotpink; */
+}    
+
+.hero1 p {
+	font-size: 1.5rem;
+	color:  #7A6174;
+	font-weight: bold;
+}
+.testimonials {
+    background-color: #8e9eb8;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+}
+.container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.testimonial {
+    flex: 1;
+    position: relative;
+    background-color: #7A6174;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.testimonial h3 {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+.testimonial h3:before {
+    font-family: Georgia, serif;
+    content: "“"; 
+    font-size: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    color: white;
+    opacity: 0.5;
+}
+.testimonial p {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+.hero2 {
+    background-color: #7A6174;
+    background-image: url(../images/hero2-1.jpg), url(../images/hero2-2.jpg);
+    background-position: left, right;
+    background-size: contain;
+	background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px 0;
+    color: white;
+}
+.menu{
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+    background-color: #F5DAE5;
+}
+.menu-item {
+    width: 40%;
+}
+.menu-item h3 {
+    font-size: 25px;
+    color: hotpink;
+}
+ul{
+    list-style: none;
+    color: #7A6174;
+    font-size: 20px;
+    line-height: 0.8cm;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+    .hero2{
+        background-image: url(../images/hero2-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-item{
+        width: 80%;
+        padding: 20px 0;
+        border-bottom: 1px dotted black;
+    }
+}
